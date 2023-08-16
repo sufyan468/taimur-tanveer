@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 "use client";
 import React, { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,7 +9,6 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "../globals.css";
-import Quotes from "../assets/quotes.svg";
 import { ReviewType } from "../utils/types";
 
 type ReviewsProps = {
@@ -18,7 +19,6 @@ type ReviewsProps = {
 };
 
 const Reviews: FC<ReviewsProps> = ({ data, subtitle, title, description }) => {
-  const items = [1, 2, 3, 4, 5, 6, 7, 8];
   return (
     <div className="w-100 relative">
       <div className="container  mx-auto px-4  p-10 ">
@@ -28,12 +28,11 @@ const Reviews: FC<ReviewsProps> = ({ data, subtitle, title, description }) => {
             What Clients Say
           </h1>
           <p className="text-slate-700">
-            Dliquip ex ea commo do conse namber onequa ute irure dolor in
-            reprehen derit in voluptate
+            Clients who trust me and my services and are happy to share their
           </p>
         </div>
         <Swiper
-          effect={"coverflow"}
+          effect={"coverflow" as unknown as "slide"}
           grabCursor={true}
           centeredSlides={true}
           slidesPerView={"auto"}
@@ -63,7 +62,21 @@ const Reviews: FC<ReviewsProps> = ({ data, subtitle, title, description }) => {
                     {item.description}
                   </p>
                   <div className="flex gap-4 items-center text-left">
-                    <img src={item.userImg} className="rounded-full" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#F87171"
+                      className="w-12 h-12"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+
                     <div>
                       <h1 className="text-2xl font-bold pt-2 text-slate-700">
                         {item.name}
