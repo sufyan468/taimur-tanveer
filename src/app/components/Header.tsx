@@ -43,7 +43,7 @@ const Header = () => {
           <div className=" sm:ps-0 lg:ps-44 ">
             <div className="relative">
               <Image
-                src={UserImg}
+                src={'https://scontent.flhe5-1.fna.fbcdn.net/v/t1.6435-9/150930666_3614577638662351_4170208271754123422_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=174925&_nc_eui2=AeHCdieR8T7BfDUqBRJoCglpxqhO-WgVYOzGqE75aBVg7EGHNex2kshWO1wxxpSpzpA0mlOET0h3iKudhlRy02_q&_nc_ohc=1ATuB-aQ_n4AX8yOHH7&_nc_ht=scontent.flhe5-1.fna&oh=00_AfAlEgtqKk7znbTknHp5RxHisjMOF0M0c3wmIgu0crXwuw&oe=650440AA'}
                 alt="Cover"
                 style={{ borderRadius: "12px" }}
               />
