@@ -21,6 +21,9 @@ export type PortfolioType = {
   image: string;
   contentDirection: string;
   background: string;
+  tools?: string;
+  company?: string;
+  link?: string;
 };
 
 export type ContributionsType = {
