@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/Logo.png";
 import { Link } from "react-scroll";
 import {
   CursorArrowRaysIcon,
@@ -14,6 +14,12 @@ const Navbar = () => {
 
   const handleMenu = () => {
     setShowMenu(!showMenu);
+  };
+
+  const downloadCV = () => {
+    window.open(
+      "https://drive.google.com/uc?id=18k0zmbxeKEff9N3UAWNGyccNvYsbsUSA"
+    );
   };
   return (
     <div>
@@ -37,7 +43,7 @@ const Navbar = () => {
               className="flex items-center  font-medium  hover:text-red-500"
             >
               <Image src={Logo} width={37} height={37} alt="Logo" />
-              <h1 className="pl-3 text-2xl font-bold text-white">Dev Sufyan</h1>
+              <h1 className="pl-3 text-2xl font-bold text-white">Dev Taimur</h1>
             </Link>
           </div>
 
@@ -88,17 +94,17 @@ const Navbar = () => {
                   duration={500}
                   className="md:p-4 font-medium  py-2 block hover:text-red-500"
                 >
-                  Portfolio
+                  Projects
                 </Link>
               </li>
               <li>
                 <Link
-                  to="service"
+                  to="skills"
                   smooth={true}
                   duration={500}
                   className="md:p-4 font-medium  py-2 block hover:text-red-500"
                 >
-                  Service
+                  Skills
                 </Link>
               </li>
               <li>
@@ -113,16 +119,19 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="blogs"
+                  to="experience"
                   smooth={true}
                   duration={500}
                   className="md:p-4 font-medium  py-2 block hover:text-red-500"
                 >
-                  Blogs
+                  Experience
                 </Link>
               </li>
               <li>
-                <button className="bg-red-500  hover:bg-red-700 text-white font-bold py-2 px-7 rounded-full">
+                <button
+                  className="bg-red-500  hover:bg-red-700 text-white font-bold py-2 px-7 rounded-full"
+                  onClick={downloadCV}
+                >
                   Download CV
                 </button>
               </li>
@@ -146,15 +155,15 @@ const Navbar = () => {
             duration={500}
             className="md:p-4 font-medium  py-2 block hover:text-red-500"
           >
-            Portfolio
+            Projects
           </Link>
           <Link
-            to="service"
+            to="skills"
             smooth={true}
             duration={500}
             className="md:p-4 font-medium  py-2 block hover:text-red-500"
           >
-            Service
+            Skills
           </Link>
           <Link
             to="contact"
@@ -165,14 +174,17 @@ const Navbar = () => {
             Contact
           </Link>
           <Link
-            to="blogs"
+            to="experience"
             smooth={true}
             duration={500}
             className="md:p-4 font-medium  py-2 block hover:text-red-500"
           >
-            Blogs
+            Experience
           </Link>
-          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-7 rounded-full">
+          <button
+            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-7 rounded-full"
+            onClick={downloadCV}
+          >
             Download CV
           </button>
         </div>
