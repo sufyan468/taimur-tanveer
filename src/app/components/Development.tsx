@@ -8,7 +8,7 @@ type DevelopmentProps = {
 
 const Development: FC<DevelopmentProps> = ({ data }) => {
   return (
-    <div className="w-100 relative  px-4" id="service">
+    <div className="w-100 relative  px-4" id="skills">
       <div className="container  mx-auto py-14 ">
         <div className="grid  py-14 grid-col-2  sm:grid-cols-1 lg:grid-cols-2 ">
           {data.length > 0 &&
