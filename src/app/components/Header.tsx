@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
-import UserImg from "../assets/sufyan.png";
+import UserImg from "../assets/TaimurTanveer.jpg";
 import Circle from "../assets/circle.png";
 import Cup from "../assets/cup.svg";
 import CountingAnimation from "./General/CountingAnimation";
@@ -18,13 +18,13 @@ const Header = () => {
         <div className="grid grid-col-2 gap-16 sm:gap-8 md:gap-8 lg:gap-8 xl:gap-8  sm:grid-cols-1 lg:grid-cols-2 py-5 sm:py-10 md:py-15 lg:py-20 xl:py-20  px-4 text-white">
           <div>
             <h3 className="text-3xl font-medium">Hello I'm</h3>
-            <h1 className="text-7xl font-semibold mb-7">Abu Sufyan</h1>
+            <h1 className="text-7xl font-semibold mb-7">Taimur Tanveer</h1>
             <h6 className="text-3xl font-medium mb-4">
-              Web Developer from Pakistan
+              Senior Android Developer
             </h6>
             <p className="text-xl mb-8">
-              Transforming complex problems into elegant solutions. Embracing
-              the art of programming to shape innovative solutions.
+              Software Developer, specializing in the development, testing, and
+              implementation of mobile applications.
             </p>
             <div className="flex gap-4">
               <button className="bg-blue-800  font-bold py-3 px-9 rounded-full mt-4 hover:bg-red-600 transition duration-300 ease-in-out">
@@ -50,11 +50,11 @@ const Header = () => {
               <div className="absolute  -top-14  -right-1 md:-right-14 lg:-right-14 xl:-right-14 bg-white p-8 rounded-xl">
                 <Image src={Cup} alt="Cup" width={45} height={45} />
               </div>
-              <div className="absolute top-12 -left-1 md:-left-14 lg:-left-14 xl:-left-14 bg-white py-4 px-2 rounded-xl w-156 ">
+              <div className="absolute bottom-2 lg:bottom-2 -left-1 md:-left-14 lg:-left-14 xl:-left-14 bg-white py-4 px-2 rounded-xl w-156 ">
                 <div className="flex items-center gap-2">
                   <CountingAnimation
                     className="text-5xl font-bold text-blue-400 animate-number"
-                    finalValue={3}
+                    finalValue={6}
                     duration={1000}
                   />
                   <h3 className="text-1xl font-bold text-slate-800">
@@ -62,9 +62,9 @@ const Header = () => {
                   </h3>
                 </div>
               </div>
-              <div className="absolute -bottom-14 -left-14 d-sm-none">
+              {/* <div className="absolute -bottom-14 -left-14 d-sm-none">
                 <Image src={Circle} alt="Circle" width={120} height={122} />
-              </div>
+              </div> */}
               <div className="absolute bottom-8 -right-1 md:-right-14 lg:-right-14 xl:-right-14 bg-white py-4 px-2 rounded-xl w-156 ">
                 <div className="flex items-center gap-3">
                   <CountingAnimation
