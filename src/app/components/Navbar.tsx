@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import Logo from "../assets/Logo.png";
+import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import {
   CursorArrowRaysIcon,
