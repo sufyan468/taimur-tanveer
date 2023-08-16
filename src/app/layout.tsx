@@ -9,9 +9,9 @@ const barlow = Barlow({
 });
 
 export const metadata = {
-  title: "Dev Sufyan",
-  description:
-    "MERN-STACK Developer: Transforming complex problems into elegant solutions. Embracing the art of programming to shape innovative solutions.",
+  title: "Dev Taimur",
+  description
+    "Senior Android Developer: Transforming complex problems into elegant solutions. Embracing the art of programming to shape innovative solutions.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,6 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="./assets/sufyan.jpeg" />
       </Head>
       <html lang="en" className="scroll-smooth hover:scroll-auto">
         <body className={barlow.className}>{children}</body>
