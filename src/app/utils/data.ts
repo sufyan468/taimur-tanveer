@@ -50,7 +50,7 @@ export const contributions = [
   {
     id: 3,
     count: 10,
-    description: "Lines of",
+    description: "Million Lines of",
     secondDescription: "Codes",
   },
 ];
@@ -59,102 +59,131 @@ export const contactAddressData = [
   {
     id: 1,
     title: "Address",
-    text: "Wafaqi Colony Lahore",
+    text: "Dubai, United Arab Emirates",
   },
   {
     id: 2,
     icon: "icon",
     title: "Email",
-    text: "chsufyan3087278@gmail.com",
+    text: "taimurtanveerms@gmail.com",
   },
   {
     id: 3,
     icon: "icon",
     title: "Phone",
-    text: "+92 340 3087 278",
+    text: "++971 54 563 4076",
   },
 ];
 
 export const reviews = [
   {
+    id: 2,
+    quoteImg: Quotes,
+    description:
+      "I have managed Taimur, he is very supportive and strong knowledge in the latest technologies. He is one who never say no to anyone for getting technical problem, I strongly recommend him as a dynamic, creative and passionate smartest professional software engineer. Best of Luck!",
+    userImg: "https://devman-react.vercel.app/img/testimonials/1.jpg",
+    name: "Ammad Ali",
+    role: "Andriod Developer",
+  },
+  {
+    id: 3,
+    quoteImg: Quotes,
+    description:
+      "I've had the pleasure of working with Taimur, a very humble person, eager to learn, autonomous and hard-worker. I recommend Taimur if you are looking for a skilled android developer sensible to the context of your project and contributing to add value to your solution.",
+    userImg: "https://devman-react.vercel.app/img/testimonials/1.jpg",
+    name: "José Alves",
+    role: "Senior Solution Architect",
+  },
+  {
+    id: 5,
+    quoteImg: Quotes,
+    description:
+      "I have worked with Taimur during our time In Telenor. He is an intelligent, an extremely quick learner and a superb problem solver. He digs deep and will have multiple solutions to a problem and will put all his energy to get things done and that too in a timely manner. Highly recommend!",
+    userImg: "https://devman-react.vercel.app/img/testimonials/1.jpg",
+    name: "Umair Ahmed",
+    role: "Senior Andriod Developer",
+  },
+  {
     id: 1,
     quoteImg: Quotes,
     description:
-      "Sufyan is a person that has great skills and deep experience in modern business solutions. Strong, experienced, and responsible react developer. He is not only a reliable and forward-thinking (React, Next) developer but also an inspiring team player. The success achieved in his job required extensive knowledge and dedication. Absolutely someone I'd want to have on my team.",
+      "Taimur is a great systems developer, his extensive knowledge of technologies involving the mobile environment makes him a highly recommended professional.",
     userImg: "https://devman-react.vercel.app/img/testimonials/1.jpg",
-    name: "Sajid Bashir",
-    role: "Test Engineer",
+    name: "Edson Pereira Franco",
+    role: "Functional Analyst",
   },
   {
-    id: 2,
+    id: 4,
     quoteImg: Quotes,
     description:
-      "Abu Sufyan is a person with great skills and profound expertise in modern business solutions. Also, he has great experience in react js, next js, and node js. Abu Sufyan is dedicated, self-motivated, and very capable. He is a good team player and has the ability to Thinking outside the box and certainly can get my full recommendation. Dedicated and goal-oriented strategist that cannot be overestimated. Definitely worth recommending.",
+      "I had the professional privilege of working with Taimur. Technically skilled and always willing to help everyone on the team, he is someone I would always recommend.",
     userImg: "https://devman-react.vercel.app/img/testimonials/1.jpg",
-    name: "Taimur Tanveer",
-    role: "App Developer",
-  },
-  {
-    id: 2,
-    quoteImg: Quotes,
-    description:
-      "Abu Sufyan is a person with great skills and profound expertise in modern business solutions. Also, he has great experience in react js, next js, and node js. Abu Sufyan is dedicated, self-motivated, and very capable. He is a good team player and has the ability to Thinking outside the box and certainly can get my full recommendation. Dedicated and goal-oriented strategist that cannot be overestimated. Definitely worth recommending.",
-    userImg: "https://devman-react.vercel.app/img/testimonials/1.jpg",
-    name: "Tanveer Hussain",
-    role: "Test Engineer",
+    name: "Alex Barboza",
+    role: "Andriod Developer",
   },
 ];
 
 export const portfolio = [
   {
     id: 1,
-    title: "Online Tutors ",
-    subtitle: "Web Application",
+    title: "Atos(Du)",
+    subtitle: "Android App Developer",
     description:
-      "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate",
+      "Manage your accounts. Link multiple accounts to access them from one place. Pay or recharge for a friend. Be the friend indeed, or surprise your family.",
     image: "https://devman-react.vercel.app/img/portfolio/1.jpg",
+    tools: "Android Studio, Kotlin, XML, Zeplin, Postman, Dagger2",
     contentDirection: "float-left",
     background: "#2A2354",
+    link: "https://play.google.com/store/apps/details?id=duleaf.duapp.splash",
   },
   {
     id: 2,
-    title: "University App",
-    subtitle: "Web Application",
+    title: "My Telenor",
+    subtitle: "Android App Developer",
     description:
-      "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate",
+      "This app is a one stop solution to all Telenor mobile related needs like offers, payments (Balance/Bills), shopping and much more.",
     image: "https://devman-react.vercel.app/img/portfolio/2.jpg",
+    tools:
+      "Android Studio, Java, Kotlin, XML, Figma, Mixpanel, Zeplin, Postman, Hilt",
     contentDirection: "float-right",
     background: "#7406CC",
+    link: "https://play.google.com/store/apps/details?id=com.telenor.pakistan.mytelenor",
   },
   {
     id: 3,
-    title: "Climate Club",
-    subtitle: "Web Application",
+    title: "Telenor Apollo",
+    subtitle: "Android App Developer",
     description:
-      "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate",
+      "Telenor Apollo is a comprehensive application which will digitize the tasks of Telenor Franchises and retailers and would provide them clear visibility of their operational tasks and end to end tracking of inventory.",
     image: "https://devman-react.vercel.app/img/portfolio/3.jpg",
+    tools: "Android Studio, Java, XML, Zeplin, Postman",
     contentDirection: "float-left",
     background: "#C291C4",
+    link: "https://play.google.com/store/apps/details?id=com.tracker.sed.dms.app",
   },
   {
     id: 4,
-    title: "Ownify",
-    subtitle: "Web Application",
+    title: "Adforest",
+    subtitle: "Android App Developer",
     description:
-      "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate",
+      "Adforest classified app has a smooth navigation for products listing, easy to use interface and support several amazing features like Ad Posting, Search, sortable home and much more",
     image: "https://devman-react.vercel.app/img/portfolio/4.jpg",
+    tools: "Android Studio, Java, XML, Postman",
     contentDirection: "float-right",
     background: "#D72587",
+    link: "https://play.google.com/store/apps/details?id=scriptsbundle.adforest",
   },
   {
     id: 5,
-    title: "Consuli",
-    subtitle: "Web Application",
+    title: "Nokri Job Board",
+    subtitle: "Android App Developer",
     description:
-      "Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate",
+      "Nokri - Job Board Android application is advanced mega job board app. It contains all required features for creating successful job portal application",
     image: "https://devman-react.vercel.app/img/portfolio/3.jpg",
+    tools: "Android Studio, Java, XML, Postman",
     contentDirection: "float-left",
     background: "#D5A0CE",
+    link: "https://play.google.com/store/apps/details?id=com.scriptsbundle.nokri",
   },
 ];
 
@@ -186,36 +215,35 @@ export const developmentData = [
   {
     id: 1,
     img: FrontEnd,
-    title: "Front-end Development",
+    title: "Mobile Technologies",
     description:
-      " Creating captivating user interfaces, enhancing user experiences, and bringing designs to life with interactive and intuitive web applications.",
+      " Fragments, Maps, Firebase Analytics, Firebase Real-Time Database, Firebase Crashlytics, Admob, Mixpanel, Firebase Remote Config, Firebase Dynamic Links, Facebook Deferred deep links, Broadcast Receiver, Hilt, Scope Storage",
     bg: "#6E7FD1",
     radius: "rounded-tl-xl",
   },
   {
     id: 2,
     img: Mobile,
-    title: "Backend Development",
+    title: "Jetpack Architecture Components",
     description:
-      "Crafting robust and efficient server-side solutions, handling databases, APIs, and logic, to empower seamless functionality and data management.",
+      "Room, Work Manager, Lifecycle, View Model, Live Data, Navigation, Data Binding",
     bg: "#343C55",
     radius: "rounded-tr-xl",
   },
   {
     id: 3,
     img: Web,
-    title: "MERN-Stack Development",
+    title: "Third Party Libraries",
     description:
-      "A versatile developer with expertise in both front-end and back-end technologies, bridging the gap between user experience and server-side functionality.",
+      "Asynchronous http client, Volley, Retrofit, Picasso,Glide, RichEditor, ButterKnife, Toasty",
     bg: "#142FB5",
     radius: "rounded-bl-xl",
   },
   {
     id: 4,
     img: DevOps,
-    title: "DevOps",
-    description:
-      "Driving collaboration between development and operations teams, streamlining workflows, and automating processes to ensure efficient and reliable software delivery.",
+    title: "Payment Gateways",
+    description: "PayPal, Stripe, PayU, Paystack",
     bg: "#6B97D3",
     radius: "rounded-br-xl",
   },
