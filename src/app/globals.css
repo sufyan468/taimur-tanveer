@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: "#FFFFFF";
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1 {
+    font-size: "24px";
+  }
+}
+
+.workEthics::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #cacdd3;
+  left: 0;
+  bottom: 100px;
+}
+
+.project-shape {
+  position: absolute;
+  z-index: -99;
+  left: 0;
+  top: 40px;
+  width: 135px;
+  height: 190px;
+  background-color: #6e7fd1;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.development-shape {
+  z-index: -99;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 135px;
+  height: 190px;
+  background-color: #6e7fd1;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.skills-shape {
+  z-index: -99;
+  position: absolute;
+  left: 0;
+  top: 140px;
+  width: 335px;
+  height: 290px;
+  background-color: #6e7fd1;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.portfolio-shape {
+  z-index: -99;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 335px;
+  height: 290px;
+  background-color: #6e7fd1;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.contact-shape-right {
+  z-index: -99;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 335px;
+  height: 290px;
+  background-color: #6e7fd1;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.contact-shape-left {
+  z-index: 99;
+  position: absolute;
+  left: 4rem;
+  bottom: -5px;
+  width: 200px;
+  height: 150px;
+  background-color: #6b97d3;
+  border-radius: 1rem;
+}
+
+.development-hover:hover {
+  cursor: pointer;
+  background-color: #be185d !important;
+}
+
+.swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 48px;
+  background: white;
+  width: 48px;
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (max-width: 600px) {
+  .project-shape,
+  .contact-shape-left,
+  .development-shape,
+  .skills-shape,
+  .portfolio-shape,
+  .d-sm-none {
+    display: none;
+  }
+}
+
+@keyframes numberIncrease {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-number {
+  animation: numberIncrease 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
