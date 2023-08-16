@@ -43,7 +43,7 @@ const Header = () => {
           <div className=" sm:ps-0 lg:ps-44 ">
             <div className="relative">
               <Image
-                src={UserImg}
+                src='https://drive.google.com/file/d/1NVuyptHAe7N1l_evXhC5VqHqxHQr_CfH/view?usp=sharing'
                 alt="Cover"
                 style={{ borderRadius: "12px" }}
               />
