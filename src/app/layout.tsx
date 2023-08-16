@@ -10,7 +10,7 @@ const barlow = Barlow({
 
 export const metadata = {
   title: "Dev Taimur",
-  description
+  description:
     "Senior Android Developer: Transforming complex problems into elegant solutions. Embracing the art of programming to shape innovative solutions.",
 };
 
