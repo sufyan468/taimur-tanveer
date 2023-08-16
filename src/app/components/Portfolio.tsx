@@ -27,7 +27,6 @@ const Portfolio: FC<PortfolioProps> = ({
           {data.length > 0 &&
             data.map((item) => (
               <div
-                key={item.id}
                 className="z-40 bg-center cursor-wait rounded-3xl hover:scale-105 transition-all duration-500 ease-in-out relative"
                 style={{
                   backgroundImage: `url(${item.image})`,
@@ -40,15 +39,33 @@ const Portfolio: FC<PortfolioProps> = ({
                   bottom: 0,
                 }}
               >
-                <div
-                  className={`py-32 px-6  w-auto sm:w-96 md:w-96 lg:w-96  ${item.contentDirection}`}
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                  key={item.id}
                 >
-                  <p className="font-bold text-white">{item.subtitle}</p>
-                  <h1 className="text-3xl font-bold text-white pb-4">
-                    {item.title}
-                  </h1>
-                  <p className="text-white">{item.description}</p>
-                </div>
+                  <div
+                    className={`py-16 px-6  w-auto sm:w-96 md:w-96 lg:w-96  ${item.contentDirection}`}
+                  >
+                    <h1 className="text-3xl font-bold text-white pb-2">
+                      {item.title}
+                    </h1>
+                    <p className="font-bold text-white pb-2">
+                      <span className="font-bold text-red-300">Role :</span>{" "}
+                      {item.subtitle}
+                    </p>
+                    <p className="font-bold text-white pb-2">
+                      <span className="font-bold text-red-300">
+                        Tools & Technologies :
+                      </span>
+                      {item.tools}
+                    </p>
+
+                    <p className="text-white">{item.description}</p>
+                  </div>
+                </a>
               </div>
             ))}
         </div>
