@@ -8,7 +8,6 @@ import "swiper/css";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import {
-  blogsData,
   contactAddressData,
   contributions,
   developmentData,
@@ -18,7 +17,6 @@ import {
   SkillsItemsData,
 } from "./utils/data";
 import Footer from "./components/Footer";
-import Blogs from "./components/Blogs";
 import ScrollIndicator from "./components/General/ScrollIndicator";
 import dynamic from "next/dynamic";
 import Skills from "./components/Skills";
@@ -41,7 +39,7 @@ export default function Home() {
       <Skills
         data={SkillsItemsData}
         subtitle="Work Experience"
-        title="The Companies I have worked with"
+        title="Companies I have worked with"
         description="I have worked with some amazing companies and teams."
       />
       <Development data={developmentData} />
@@ -53,12 +51,7 @@ export default function Home() {
       />
 
       <Contact data={contactAddressData} />
-      {/* <Blogs
-        data={blogsData}
-        subtitle="Latest News"
-        title="Checkout My Recent Blogs"
-        description=" I love to share my knowledge and experiences with the world."
-      /> */}
+
       <Footer />
       <div className="fixed -right-8 lg:right-0 md:right-0 xl:right-0 bottom-24 rotate-90 cursor-pointer z-40">
         <ScrollIndicator />

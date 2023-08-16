@@ -1,8 +1,5 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import Dedication from "../assets/dedication.svg";
-import SmartWork from "../assets/smartWork.svg";
-import Intelligence from "../assets/Intelligence.svg";
 import CountingAnimation from "./General/CountingAnimation";
 import { ContributionsType, WorkEthicsType } from "../utils/types";
 
@@ -48,7 +45,7 @@ const WorkEthics: FC<WorkEthicsProps> = ({ data, contributions }) => {
       </div>
       <div className="w-100 relative ">
         <div className="container px-4 mx-auto py-0 md:py-14 lg:py-14 xl:py-14 ">
-          <div className="grid gap-10  md:gap-20 lg:gap-20 xl:gap-20 py-14 grid-cols-2  sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 ">
+          <div className="grid gap-10  md:gap-20 lg:gap-20 xl:gap-20 py-14 grid-cols-1  sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 ">
             {contributions.length > 0 &&
               contributions.map((item: ContributionsType) => (
                 <div key={item.id} className="mb-10">

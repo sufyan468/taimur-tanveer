@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
-import UserImg from "../assets/sufyan.png";
+import UserImg from "../assets/TaimurTanveer.jpg";
 import Circle from "../assets/circle.png";
 import Cup from "../assets/cup.svg";
 import CountingAnimation from "./General/CountingAnimation";
@@ -43,11 +43,11 @@ const Header = () => {
           <div className=" sm:ps-0 lg:ps-44 ">
             <div className="relative">
               <Image
-                src='https://drive.google.com/file/d/1NVuyptHAe7N1l_evXhC5VqHqxHQr_CfH/view?usp=sharing'
+                src={UserImg}
                 alt="Cover"
                 style={{ borderRadius: "12px" }}
               />
-              <div className="absolute  -top-14  -right-1 md:-right-14 lg:-right-14 xl:-right-14 bg-white p-8 rounded-xl">
+              <div className="absolute  -top-14  -right-1 md:-right-14 lg:-right-14 xl:-right-14 bg-white p-4 rounded-xl">
                 <Image src={Cup} alt="Cup" width={45} height={45} />
               </div>
               <div className="absolute bottom-2 lg:bottom-2 -left-1 md:-left-14 lg:-left-14 xl:-left-14 bg-white py-4 px-2 rounded-xl w-156 ">

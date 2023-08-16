@@ -214,7 +214,7 @@ export const blogsData = [
 export const developmentData = [
   {
     id: 1,
-    img: FrontEnd,
+    img: Mobile,
     title: "Mobile Technologies",
     description:
       " Fragments, Maps, Firebase Analytics, Firebase Real-Time Database, Firebase Crashlytics, Admob, Mixpanel, Firebase Remote Config, Firebase Dynamic Links, Facebook Deferred deep links, Broadcast Receiver, Hilt, Scope Storage",
@@ -223,7 +223,7 @@ export const developmentData = [
   },
   {
     id: 2,
-    img: Mobile,
+    img: FrontEnd,
     title: "Jetpack Architecture Components",
     description:
       "Room, Work Manager, Lifecycle, View Model, Live Data, Navigation, Data Binding",

@@ -10,7 +10,18 @@ const Development: FC<DevelopmentProps> = ({ data }) => {
   return (
     <div className="w-100 relative  px-4" id="skills">
       <div className="container  mx-auto py-14 ">
-        <div className="grid  py-14 grid-col-2  sm:grid-cols-1 lg:grid-cols-2 ">
+        <div className="grid">
+          <div className="pt-4 pb-14 text-center font-medium ">
+            <p className="text-red-500 font-bold pb-2">Skills</p>
+            <h1 className="text-4xl pb-5 font-bold text-slate-800">
+              Technical Skills
+            </h1>
+            <p className="text-slate-700">
+              I have a wide range of skills that I have acquired over the years
+            </p>
+          </div>
+        </div>
+        <div className="grid  pb-10 pt-4 grid-col-2  sm:grid-cols-1 lg:grid-cols-2 ">
           {data.length > 0 &&
             data.map((item: DevelopmentDataType) => (
               <div
