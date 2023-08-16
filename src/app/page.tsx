@@ -35,33 +35,30 @@ export default function Home() {
       <Portfolio
         data={portfolio}
         title="My Amazing Works"
-        subtitle="Portfolio"
-        description=" Dliquip ex ea commo do conse namber onequa ute irure dolor in
-            reprehen derit in voluptate"
+        subtitle="Projects"
+        description="My work is my passion and I love to work with great people and teams."
       />
       <Skills
         data={SkillsItemsData}
-        subtitle="My Skills"
-        title="I Develop My Skills Regularly"
-        description="Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate"
+        subtitle="Work Experience"
+        title="The Companies I have worked with"
+        description="I have worked with some amazing companies and teams."
       />
       <Development data={developmentData} />
       <Reviews
         data={reviews}
-        title=" What Clients Say"
+        title=" Recommendations        "
         subtitle="Testimonials"
-        description=" Dliquip ex ea commo do conse namber onequa ute irure dolor in
-            reprehen derit in voluptate"
+        description="What my clients say about me"
       />
 
       <Contact data={contactAddressData} />
-      <Blogs
+      {/* <Blogs
         data={blogsData}
         subtitle="Latest News"
         title="Checkout My Recent Blogs"
-        description=" Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen
-          derit in voluptate"
-      />
+        description=" I love to share my knowledge and experiences with the world."
+      /> */}
       <Footer />
       <div className="fixed -right-8 lg:right-0 md:right-0 xl:right-0 bottom-24 rotate-90 cursor-pointer z-40">
         <ScrollIndicator />
