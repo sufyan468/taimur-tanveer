@@ -38,7 +38,7 @@ const WorkEthics: FC<WorkEthicsProps> = ({ data, contributions }) => {
                   </div>
                 </div>
                 <hr />
-                <p className="pt-6">{item.description}</p>
+                <p className="pt-6 text-slate-800">{item.description}</p>
               </div>
             ))}
         </div>

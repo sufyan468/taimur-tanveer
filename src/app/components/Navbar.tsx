@@ -30,10 +30,12 @@ const Navbar = () => {
           items-center
           justify-between
           w-full
-          py-7
+          py-4
+          lg:py-0
           md:py-0
+          xl:py-0
           px-4
-          text-lg text-gray-700 mb-1 sm:mb-6 md:mb-5 lg:mb-10 xl:mb-10"
+          text-lg text-gray-700"
         >
           <div>
             <Link
@@ -139,6 +141,7 @@ const Navbar = () => {
           </div>
         </nav>
       </header>
+
       {showMenu && (
         <div className="bg-white absolute right-full flex flex-col gap-4 z-10 top-24 w-full p-8 transition-transform duration-300 transform translate-x-full sm:translate-x-0">
           <Link

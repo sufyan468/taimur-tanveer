@@ -40,17 +40,17 @@
         "async": false
       }
     },
-    "(app-client)/./src/app/page.tsx": {
+    "(app-client)/./src/app/globals.css": {
       "*": {
-        "id": "(sc_client)/./src/app/page.tsx",
+        "id": "(sc_client)/./src/app/globals.css",
         "name": "*",
         "chunks": [],
         "async": false
       }
     },
-    "(app-client)/./src/app/globals.css": {
+    "(app-client)/./src/app/page.tsx": {
       "*": {
-        "id": "(sc_client)/./src/app/globals.css",
+        "id": "(sc_client)/./src/app/page.tsx",
         "name": "*",
         "chunks": [],
         "async": false
@@ -139,14 +139,6 @@
       ],
       "async": false
     },
-    "/Users/mac/Desktop/Untitled/src/app/page.tsx": {
-      "id": "(app-client)/./src/app/page.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
     "/Users/mac/Desktop/Untitled/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Barlow\",\"arguments\":[{\"weight\":[\"400\",\"500\",\"600\",\"700\"],\"style\":[\"normal\"],\"subsets\":[\"latin\",\"latin-ext\",\"vietnamese\"]}],\"variableName\":\"barlow\"}": {
       "id": "(app-client)/./node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Barlow\",\"arguments\":[{\"weight\":[\"400\",\"500\",\"600\",\"700\"],\"style\":[\"normal\"],\"subsets\":[\"latin\",\"latin-ext\",\"vietnamese\"]}],\"variableName\":\"barlow\"}",
       "name": "*",
@@ -162,14 +154,22 @@
         "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
+    },
+    "/Users/mac/Desktop/Untitled/src/app/page.tsx": {
+      "id": "(app-client)/./src/app/page.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
     }
   },
   "entryCSSFiles": {
-    "/Users/mac/Desktop/Untitled/src/app/page": [
-      "static/css/app/page.css"
-    ],
     "/Users/mac/Desktop/Untitled/src/app/layout": [
       "static/css/app/layout.css"
+    ],
+    "/Users/mac/Desktop/Untitled/src/app/page": [
+      "static/css/app/page.css"
     ]
   }
 }
