@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="w-100">
             <p className="text-lg text-white">
               Developed by{" "}
-              <span className="text-red-400 font-bold">Abu Sufyan</span>
+              <span className="text-red-400 font-bold">Taimur Tanveer</span>
               {"  "}CopyRight © by {currentYear}
             </p>
           </div>
