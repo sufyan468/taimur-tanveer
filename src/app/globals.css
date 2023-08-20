@@ -17,9 +17,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background: "#FFFFFF";
   overflow-x: hidden;
+  color: black;
 }
 
 @layer base {
